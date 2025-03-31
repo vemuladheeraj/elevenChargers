@@ -124,10 +124,31 @@ body {
   margin: 0 auto;
 }
 
+/* Footer */
+.footer {
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
 /* Responsive Fixes */
 @media (max-width: 768px) {
   .hero-image-container {
-    height: 70vh;
+    height: auto;
+  }
+
+  .hero-img {
+    height: auto;
+    object-fit: contain; /* ✅ Show full image on mobile */
+  }
+
+  .hero-text-overlay {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
   }
 
   .hero-text-overlay h1 {
