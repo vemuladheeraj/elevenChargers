@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eleven Chargers</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Eleven Chargers</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="matches.html">Matches</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative">
+      <div class="hero-image-container">
+        <img
+          src="assets/images/main-image.jpg"
+          alt="Main Image"
+          class="hero-img"
+        />
+        <div class="hero-text-overlay text-center text-white">
+          <h1>Eleven Chargers</h1>
+          <p>Conquer the field, chase the dream!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner-section container mt-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="small-banner position-relative">
+            <img
+              src="assets/images/small-image1.jpg"
+              class="img-fluid w-100"
+              alt="Match Highlights"
+            />
+            <div
+              class="overlay-small d-flex flex-column align-items-center justify-content-center text-center"
+            >
+              <h3>Match Highlights</h3>
+              <a href="#" class="btn btn-danger btn-sm mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="small-banner position-relative">
+            <img
+              src="assets/images/small-image2.jpg"
+              class="img-fluid w-100"
+              alt="Upcoming Matches"
+            />
+            <div
+              class="overlay-small d-flex flex-column align-items-center justify-content-center text-center"
+            >
+              <h3>Upcoming Matches</h3>
+              <p>Don’t miss our next battle!</p>
+              <a href="#" class="btn btn-danger btn-sm mt-2">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Player Carousel Section -->
+    <!-- Player List Section from External File -->
+    <section class="player-carousel-section mt-5 px-3">
+      <h2 class="text-center mb-4">Meet Our Players</h2>
+      <div
+        id="playerList"
+        class="scrolling-wrapper d-flex flex-nowrap overflow-auto pb-3"
+      ></div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/players.js"></script>
+    <script>
+      // This runs once DOM is ready and loads the player cards
+      document.addEventListener("DOMContentLoaded", function () {
+        renderPlayers("playerList");
+      });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
