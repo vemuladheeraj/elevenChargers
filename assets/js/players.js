@@ -30,7 +30,7 @@ const players = [
   },
   {
     name: "K Vinay",
-    role: "Bowler",
+    role: "Allrounder",
     batting: "Right-hand",
     bowling: "Medium",
     image: "assets/images/players/kvinay.jpg",
@@ -44,7 +44,7 @@ const players = [
   },
   {
     name: "Dattu",
-    role: "Bowler",
+    role: "Allrounder",
     batting: "Right-hand",
     bowling: "Dast",
     image: "assets/images/players/dattu.jpg",
@@ -86,7 +86,7 @@ const players = [
   },
   {
     name: "Shahid",
-    role: "Bowler",
+    role: "Allrounder",
     batting: "Right-hand",
     bowling: "Super Fast",
     image: "assets/images/players/player3.jpg",
