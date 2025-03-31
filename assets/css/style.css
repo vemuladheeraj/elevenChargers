@@ -133,6 +133,48 @@ body {
   margin-top: 3rem;
   font-size: 0.95rem;
 }
+/* Default Light Theme (already applied) */
+
+/* Dark Theme Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .navbar a,
+body.dark-mode .navbar-brand {
+  color: #ffffff !important;
+}
+
+body.dark-mode .small-banner,
+body.dark-mode .player-card {
+  background-color: #222;
+  color: #eee;
+}
+
+body.dark-mode .hero-text-overlay h1,
+body.dark-mode .hero-text-overlay p {
+  color: #fff;
+}
+
+body.dark-mode .footer {
+  background-color: #1f1f1f;
+  color: #aaa;
+}
+
+body.dark-mode .overlay-small {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+body.dark-mode .btn-outline-light {
+  border-color: #aaa;
+  color: #aaa;
+}
 
 /* Responsive Fixes */
 @media (max-width: 768px) {
